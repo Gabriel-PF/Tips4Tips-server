@@ -10,9 +10,18 @@ import userRouter from "./routes/user.js";
 
 const app = express();
 
+app.set("trust proxy", 1);
+
+  // controls a very specific header to pass headers from the frontend
+  app.use(
+    cors({
+      credentials: true,
+      origin: process.env.ORIGIN || "http://localhost:3000",
+    })
+  );
+
 app.use(express.json({ limit: '30mb', extended: true }))
 app.use(express.urlencoded({ limit: '30mb', extended: true }))
-app.use(cors());
 
 app.use('/posts', postRoutes);
 app.use("/user", userRouter);
