@@ -1,78 +1,62 @@
 
-# Tips4Tips
+### Tips4Tips ###
 
-> 
+> A full stack MERN application with all CRUD operations capabilities delivering a social media platform where users can share their little secrets and tips in their favorite places. 
 
 > Live demo (https://luxury-marigold-ce061c.netlify.app/). 
 
 ## Table of Contents
 * [General Info]
-* [Setup]
-* [Room for Improvement]
-* [Client - Frontend] 
-* [Server - Backend] 
+* [Room for Improvement - backlog]
+* [Pages]
+* [Client - Frontend - Models] 
+* [Server - Backend - Routes] 
 * [Links]
-* [Acknowledgements]
+* [Acknowledgements - Inspiration]
 
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
 
-
-
-## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
-
+With the massification of the tourism and the rise of social media, the tendency nowadays is for people simply trying to mimic influencers when traveling, going to overrated places, basically "believing the hype", since several of those places and attractions can be paid promotion or product placement, we come up with this idea to provide a platform for more "obscure" travel tips where you can find not so obvious advices and "workarounds" for popular destinations, if your tip is indeed a good one, the user can actually earn some tips. 
+Other functionality to be implemented is the possibility to create closed networks so friends and family can share their expediencies in a more private setting. 
 
 
 ## Room for Improvement/Backlog
 Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
 Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
+- Fix:
+     .bugs
+     .tags function when creating posts and searching.
+     
+- More models and functionalities, user settings, and personalization. 
 
 To do:
-- Feature to be added 1
-- Feature to be added 2
-
+- Implementing a "tip jar" functionality with PayPal integration
+- Implement a way so that users can create closed groups or networks in order to share their tips in a private enviroment. 
+- Possibility to edit and delete comments
 
 **PAGES:**
 
 404: As an anon/user I can see a 404 page if I try to reach a page that does not exist so that I know it's my fault
 
-Signup: As a user I can sign up in the platform so that I can start creating saving favorite markets
+List of all posts created by the users of the platform even if not logged in. 
 
-Login: As a user I can login to the platform so that I can see my favorite markets and follow other users
+Signup: Users can sign up. 
 
-Logout: As a user I can logout from the platform so no one else can use it
+Login: Users can login and create their own posts. 
 
-Profile: As a user I can see the Markets I created and the users I follow as well as edit my profile data.
+Logout: Users can logout and continuing navigating through the posts and even posts "anonymous" comments. 
+ 
+See posts details more in depth information regarding the post and also the comments attached. 
 
-Add markets As a user I can add a market so that I can share it with the community
+Search for specific post, user is able to search for a specific tittle or keyword. 
 
-List markets As a user I want to all markets so that I can choose one to visit
+Edit a post, user creator of the post is able to edit all tittle, description and picture of the post. 
 
-See market details As a user I want to see the markets details so I know where I can visit it.
+Comment in a post, user I can see the post details and leave a feedback.
 
-Review a market As a user I can click on leave a review and give my input
-
-Search markets As a user I want to search markets by name, location or any key so that I know if it´s already in the platform
-
-Add to favorites As a user I want to add a market to favorite so that I can save the markets that I liked the most
-
-See my favorites As a user I want to see my favorite restaurantes so that I can see the ones I liked the most
-
-Discover a market As a user I can click on the dicovery Button and it will show me a new Marke for me to discover.
-
-Star a market As I user I can make my opinion about a market base on the stars a Market has. The more people has saved the market as favourite, the more stars.
-
-
+Like a post, user is able to like the posts based on their content. 
 
 
 <br>
@@ -126,7 +110,6 @@ GET/search
 
   
 
-
 GET/posts
     query:
     page,
@@ -144,14 +127,14 @@ PATCH/:id/ //likePost
 
 POST/:id  //commentPost
 
-## Links
+### Links
 
-### Trello
+## Trello
 
 (https://trello.com/b/MdJEGVrC/project-module-3) 
 
 
-### Git
+## Git
 
 
 [Client repository Link](https://github.com/Gabriel-PF/Tips4Tips-client)
@@ -160,16 +143,17 @@ POST/:id  //commentPost
 
 [Deployed App Link](https://luxury-marigold-ce061c.netlify.app/posts)
 
-### Slides
+## Slides
 
 The url to your presentation slides
 
-[Slides Link](https://docs.google.com/presentation/d/1zndKZ8DC-_i391alptPKsAKanCSXTrLVL39L3xtEjz8/edit?usp=sharing)
+[Slides Link] - (https://docs.google.com/presentation/d/1rC83HJCVXhQzczrAxFxwXivNT1WlTG1QA560ICoqTw4/edit?usp=sharing)
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
 
+- This project was inspired by:
 
+ (https://www.youtube.com/watch?v=zaWtIkJgah4&ab_channel=JohnAhn)
+ (https://www.youtube.com/watch?v=TFGEq5OZgaA&ab_channel=IndianCoders)
+
+- Many thanks to the teacher and colleagues
